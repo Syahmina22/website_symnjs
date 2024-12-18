@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #333; /* Dark grey for text */
+            background-color: #fdfcf8; /* Soft beige background */
+        }
+
+        /* Main Content */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #8b5e3c; /* Warm brown for headings */
+            margin-bottom: 1rem;
+        }
+
+        /* Styling for the rounded pink box */
+        .rounded-box {
+            background-color: #f8e1db;  /* Light pink background */
+            border-radius: 15px;         /* Rounded corners */
+            padding: 1rem;               /* Padding inside the box */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Subtle shadow */
+            text-align: center;           /* Center text */
+            transition: all 0.3s ease;
+        }
+
+        .rounded-box:hover {
+            background-color: #FFB6C1;  /* Light grey background on hover */
+            transition: background-color 0.3s ease;  /* Smooth transition effect */
+        }
+
+        p {
+            color: #5a5a5a;  /* Dark grey text color */
+            margin: 0;       /* Remove default margin */
+        }
+
+        button {
+            background-color: #d49595; /* Soft pink button */
+            color: white;
+            border: none;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #8b5e3c; /* Warm brown */
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background-color: #f8e1db; /* Light blush pink */
+            padding: 1rem 0;
+            color: #5a5a5a;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Navigation Styling */
+        ul.nav-list {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        ul.nav-list li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        ul.nav-list li a:hover {
+            background-color: #d49595; /* Soft pink hover effect */
+        }
+
+        /* Circle Box Navigation */
+        .circle-box {
+            display: inline-flex;  /* Use inline-flex to align items next to each other */
+    align-items: center;
+    justify-content: center;
+    width: 120px; /* Adjust width */
+    height: 120px; /* Adjust height */
+    background-color: #FFE4E1; /* MistyRose background color */
+    border-radius: 50%; /* Making the box circular */
+    font-size: 12px; /* Adjust font size */
+    color: #333;
+    text-align: center;
+    margin: 10px; /* Adjust spacing between circles */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .circle-box:hover {
+            background-color: #FFB6C1;  /* Light grey background on hover */
+        }
+    </style>
+</head>
+
+<body>
+
+  
+
+    <!-- Main Content -->
+    <main>
+        <h1>Welcome to My Digital Playground</h1>
+        <div class="rounded-box">
+            <p>
+                Step right up and enter the world of Izzah Syahmina! Explore my world 
+                by clicking buttons below. Don't forget to give your feedback at the comment section! Thank you.
+            </p>
+        </div>
+
+        <!-- Circle Box Navigation -->
+        <div>
+            <div class="circle-box" onclick="location.href='biodata.html'">BIODATA</div>
+            <div class="circle-box" onclick="location.href='portfolio.html'">PORTFOLIO</div>
+            <div class="circle-box" onclick="location.href='video.html'">VIDEO</div>
+            <div class="circle-box" onclick="location.href='comments.html'">COMMENT</div>
+        </div>
+    </main>
+   <div class="background-animation">
+  <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 [NIS]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

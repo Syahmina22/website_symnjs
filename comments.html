@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Comments</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="biodata.html">My Biodata</a></li>
+        <li><a href="portfolio.html">My Portfolio</a></li>
+        <li><a href="video.html">My Video</a></li>
+        <li><a href="comments.html" class="active">Your Comments</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Background Animation -->
+  <div class="background-animation">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Your Comments</h1>
+
+    <!-- Form -->
+    <form id="commentForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="comment[name]" required>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment[body]" rows="4" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <!-- Thank You Message -->
+    <div id="thankYouMessage" style="display: none; margin-top: 20px; color: #8b5e3c;">
+      <h2>Thank you for your response!</h2>
+      <p>We appreciate your feedback.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2024 NIS. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.getElementById('commentForm');
+    const thankYouMessage = document.getElementById('thankYouMessage');
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission behavior
+      form.style.display = 'none'; // Hide the form
+      thankYouMessage.style.display = 'block'; // Show the thank you message
+    });
+  </script>
+</body>
+</html>
